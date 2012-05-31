@@ -100,6 +100,7 @@ TEMPLATE_DIRS = (
     (ROOT_CONF + '/templates'),
 )
 
+AUTH_PROFILE_MODULE ='customers.Customer'
 
 GRAPPELLI_ADMIN_TITLE = "<li class='user-options-container collapse closed'> \
 <a href='javascript://' class='user-options-handler collapse-handler'> \
@@ -118,8 +119,12 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'products',
     'registration',
+    'profiles',
+    #apps project
+    'customers',
+    'products',
+    'order',
 )
 
 # A sample logging configuration. The only tangible logging
